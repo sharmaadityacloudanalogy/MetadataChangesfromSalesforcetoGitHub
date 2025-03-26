@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Volume_14</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+ Volume__c  &gt; 50,
+ Volume__c &lt;-50
+)</errorConditionFormula>
+    <errorMessage>The Volume Range Must be between -50 to 50.</errorMessage>
+</ValidationRule>

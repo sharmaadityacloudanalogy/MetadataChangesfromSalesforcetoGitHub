@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Integer_13</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(ISNUMBER(My_Integer__c))</errorConditionFormula>
+    <errorMessage>The My Integer Field only accept Integer Value!.</errorMessage>
+</ValidationRule>

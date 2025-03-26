@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Multiple_of_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>MOD( Volume__c , 5) &lt;&gt; 0</errorConditionFormula>
+    <errorDisplayField>Volume__c</errorDisplayField>
+    <errorMessage>Volume must be multiple of 5</errorMessage>
+</ValidationRule>

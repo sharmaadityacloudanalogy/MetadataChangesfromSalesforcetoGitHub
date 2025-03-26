@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_contact_7</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( ISBLANK( MailingStreet ) ,
+ ISBLANK(MailingCity),
+ ISBLANK(MailingCountry))</errorConditionFormula>
+    <errorMessage>Mailing Street, Mailing City, and Mailing Country must all be provided</errorMessage>
+</ValidationRule>

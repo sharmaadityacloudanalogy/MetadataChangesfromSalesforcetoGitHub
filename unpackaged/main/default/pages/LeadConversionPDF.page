@@ -1,0 +1,9 @@
+<apex:page controller="LeadPDFController" contentType="application/pdf" renderAs="pdf">
+    <apex:form >
+        <h1>Lead Conversion Details</h1>
+        <p><b>First Name:</b> {!lead.FirstName}</p>
+        <p><b>Last Name:</b> {!lead.LastName}</p>
+        <p><b>Email:</b> {!lead.Email}</p>
+        <p><b>Converted Contact:</b> {!contact.FirstName} {!contact.LastName}</p>
+    </apex:form>
+</apex:page>

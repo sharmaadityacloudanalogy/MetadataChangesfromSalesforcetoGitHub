@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Mix_pct_16</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(Mix_pct__c &gt; 1.0,
+ Mix_pct__c &lt; 0.0)</errorConditionFormula>
+    <errorMessage>Enter mix_pct B/w 1 To 100.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,79 @@
+<template>
+    <lightning-card title="Contacts" icon-name="standard:contact">
+        <template if:true={contacts}>
+            <div class="slds-grid slds-wrap">
+                <!-- Header Row -->
+                <div class="slds-size_12-of-12 slds-grid slds-p-around_x-small slds-theme_shade">
+                    <div class="slds-col slds-size_3-of-12"><strong>First Name</strong></div>
+                    <div class="slds-col slds-size_3-of-12"><strong>Last Name</strong></div>
+                    <div class="slds-col slds-size_3-of-12"><strong>Email</strong></div>
+                    <div class="slds-col slds-size_2-of-12"><strong>Phone</strong></div>
+                    <div class="slds-col slds-size_1-of-12"><strong>Actions</strong></div>
+                </div>
+
+                <!-- Data Rows -->
+                <template for:each={contacts} for:item="contact">
+                    <div key={contact.Id} class="slds-size_12-of-12 slds-grid slds-p-around_x-small slds-border_bottom">
+                        <div class="slds-col slds-size_3-of-12">
+                            <template if:true={contact.isEditing}>
+                                <lightning-input type="text" value={contact.FirstName} 
+                                    onchange={handleFieldChange} data-id={contact.Id} data-field="FirstName">
+                                </lightning-input>
+                            </template>
+                            <template if:false={contact.isEditing}>
+                                {contact.FirstName}
+                            </template>
+                        </div>
+
+                        <div class="slds-col slds-size_3-of-12">{contact.LastName}</div>
+
+                        <div class="slds-col slds-size_3-of-12">
+                            <template if:true={contact.isEditing}>
+                                <lightning-input type="email" value={contact.Email}
+                                    onchange={handleFieldChange} data-id={contact.Id} data-field="Email">
+                                </lightning-input>
+                            </template>
+                            <template if:false={contact.isEditing}>
+                                {contact.Email}
+                            </template>
+                        </div>
+
+                        <div class="slds-col slds-size_2-of-12">
+                            <template if:true={contact.isEditing}>
+                                <lightning-input type="phone" value={contact.Phone}
+                                    onchange={handleFieldChange} data-id={contact.Id} data-field="Phone">
+                                </lightning-input>
+                            </template>
+                            <template if:false={contact.isEditing}>
+                                {contact.Phone}
+                            </template>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="slds-col slds-size_1-of-12">
+                            <template if:false={contact.isEditing}>
+                                <lightning-button-icon icon-name="utility:edit" variant="brand" alternative-text="Edit"
+                                    onclick={handleEdit} data-id={contact.Id}>
+                                </lightning-button-icon>
+                                <lightning-button-icon icon-name="utility:delete" variant="destructive" alternative-text="Delete"
+                                    onclick={handleDelete} data-id={contact.Id}>
+                                </lightning-button-icon>
+                            </template>
+                            <template if:true={contact.isEditing}>
+                                <lightning-button label="Save" variant="success"
+                                    onclick={handleSave} data-id={contact.Id} disabled={contact.disableSave}>
+                                </lightning-button>
+                                <lightning-button label="Cancel" variant="neutral"
+                                    onclick={handleCancel} data-id={contact.Id}>
+                                </lightning-button>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+    </lightning-card>
+</template>

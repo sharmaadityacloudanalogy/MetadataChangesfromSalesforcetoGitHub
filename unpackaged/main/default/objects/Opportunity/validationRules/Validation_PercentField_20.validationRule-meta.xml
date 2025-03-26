@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_PercentField_20</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(Probability &lt; 0.1, Probability &gt; 0.4)</errorConditionFormula>
+    <errorDisplayField>Probability</errorDisplayField>
+    <errorMessage>Probability must be B/W 0 To 40%</errorMessage>
+</ValidationRule>

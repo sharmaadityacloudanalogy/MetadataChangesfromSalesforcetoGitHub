@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Phone_10</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(REGEX( Phone , &#39;[123456789]{10}&#39;))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Enter a valid 10 digit phone no with country code</errorMessage>
+</ValidationRule>

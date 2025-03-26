@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- MultiPickList Field --></label>
+        <name>MultiPickList_Field__c</name>
+        <picklistValues>
+            <masterLabel>Attendee Contact</masterLabel>
+            <translation><!-- Attendee Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organizer Contact</masterLabel>
+            <translation><!-- Organizer Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presenter Contact</masterLabel>
+            <translation><!-- Presenter Contact --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

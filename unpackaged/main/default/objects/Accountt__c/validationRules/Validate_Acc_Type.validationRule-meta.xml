@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Acc_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR
+(
+AND( Minium_Balance__c &lt; 5000,
+ ISPICKVAL( Acountt_Type__c , &#39;Saving Account&#39;) 
+),
+AND( Minium_Balance__c &lt; 10000,
+ ISPICKVAL( Acountt_Type__c , &#39;Current Account&#39;)
+),
+AND( Minium_Balance__c &lt; 2500,
+ ISPICKVAL( Acountt_Type__c , &#39;Minor Saving Acc&#39;)
+))</errorConditionFormula>
+    <errorMessage>minimum balance greater than equal to 5000 for saving and 10000 for current account minimum balance greater than equal to 5000 for saving and 10000 for current account</errorMessage>
+</ValidationRule>

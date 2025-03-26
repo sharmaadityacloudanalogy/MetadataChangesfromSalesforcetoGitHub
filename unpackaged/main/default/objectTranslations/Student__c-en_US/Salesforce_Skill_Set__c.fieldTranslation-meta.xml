@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Salesforce Skill Set --></label>
+        <name>Salesforce_Skill_Set__c</name>
+        <picklistValues>
+            <masterLabel>Admin Concepts</masterLabel>
+            <translation><!-- Admin Concepts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Async Apex</masterLabel>
+            <translation><!-- Async Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aura</masterLabel>
+            <translation><!-- Aura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dashboard</masterLabel>
+            <translation><!-- Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Security</masterLabel>
+            <translation><!-- Data Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployment</masterLabel>
+            <translation><!-- Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow</masterLabel>
+            <translation><!-- Flow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JIRA</masterLabel>
+            <translation><!-- JIRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LWC</masterLabel>
+            <translation><!-- LWC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lucid Chart</masterLabel>
+            <translation><!-- Lucid Chart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report</masterLabel>
+            <translation><!-- Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smartsheets</masterLabel>
+            <translation><!-- Smartsheets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Class</masterLabel>
+            <translation><!-- Test Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visualforce</masterLabel>
+            <translation><!-- Visualforce --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Username_cannot_mohit_32</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(Name = &#39;mohit&#39;,TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>Username cannot be mohit</errorMessage>
+</ValidationRule>

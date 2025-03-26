@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Begin_Date_End_Date</fullName>
+    <active>false</active>
+    <errorConditionFormula>Begin_Date__c  &gt;  End_Date__c</errorConditionFormula>
+    <errorDisplayField>End_Date__c</errorDisplayField>
+    <errorMessage>End Date Must be after Begin date</errorMessage>
+</ValidationRule>

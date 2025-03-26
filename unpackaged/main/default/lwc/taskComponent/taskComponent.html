@@ -1,0 +1,69 @@
+<template>
+    <lightning-card title="Create Task" icon-name="standard:task">
+        <div class="slds-p-around_medium">
+            
+            <!-- Subject Picklist -->
+            <lightning-combobox
+                label="Subject"
+                name="subject"
+                value={subject}
+                options={subjectOptions}
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <!-- Due Date -->
+            <lightning-input 
+                type="date" 
+                label="Due Date" 
+                name="dueDate" 
+                value={dueDate} 
+                onchange={handleChange}>
+            </lightning-input>
+
+            <!-- Contact Field with Icon Inside -->
+            <div class="slds-form-element">
+                <label class="slds-form-element__label" for="contact">Contact</label>
+                <div class="slds-input-has-icon slds-input-has-icon_left">
+                    <lightning-icon icon-name="standard:contact" size="small" class="icon-inside"></lightning-icon>
+                    <lightning-input 
+                        type="text" 
+                        name="selectedContact" 
+                        value={selectedContactName} 
+                        readonly 
+                        class="custom-input">
+                    </lightning-input>
+                </div>
+                <!-- Contact Selection Dropdown -->
+                <lightning-combobox
+                    name="contactId"
+                    value={contactId}
+                    options={contactOptions}
+                    onchange={handleContactChange}
+                    class="slds-m-top_xx-small">
+                </lightning-combobox>
+            </div>
+
+            <!-- Assigned To (User Lookup) -->
+            <lightning-record-edit-form object-api-name="Task">
+                <lightning-input-field field-name="OwnerId" label="Assigned To" value={assignedTo} onchange={handleChange}></lightning-input-field>
+            </lightning-record-edit-form>
+
+            <!-- Status Picklist -->
+            <lightning-combobox 
+                label="Status" 
+                name="status" 
+                value={status} 
+                options={statusOptions} 
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <!-- Create Task Button -->
+            <lightning-button 
+                label="Create Task" 
+                variant="brand" 
+                onclick={handleSave} 
+                class="slds-m-top_medium">
+            </lightning-button>
+        </div>
+    </lightning-card>
+</template>

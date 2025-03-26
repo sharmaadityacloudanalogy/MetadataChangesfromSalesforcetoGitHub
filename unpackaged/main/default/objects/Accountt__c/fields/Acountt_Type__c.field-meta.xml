@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acountt_Type__c</fullName>
+    <label>Acountt_Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Saving Account</fullName>
+                <default>false</default>
+                <label>Saving Account</label>
+            </value>
+            <value>
+                <fullName>Current Account</fullName>
+                <default>false</default>
+                <label>Current Account</label>
+            </value>
+            <value>
+                <fullName>Minor Saving Acc</fullName>
+                <default>false</default>
+                <label>Minor Saving Acc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

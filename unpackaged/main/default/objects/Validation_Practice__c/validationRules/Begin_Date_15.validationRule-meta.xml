@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Begin_Date_15</fullName>
+    <active>false</active>
+    <errorConditionFormula>DAY(Begin_Date__c) &gt; 15</errorConditionFormula>
+    <errorDisplayField>Begin_Date__c</errorDisplayField>
+    <errorMessage>Begin Date must be 1 to15</errorMessage>
+</ValidationRule>

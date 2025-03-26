@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_PRODUCT</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(  ISPICKVAL(Opportunity.StageName ,&#39;Closed Won&#39;)
+ ,ISPICKVAL(Opportunity.StageName ,&#39;Closed Lost&#39;))</errorConditionFormula>
+    <errorMessage>Opportunity product canont be edit</errorMessage>
+</ValidationRule>

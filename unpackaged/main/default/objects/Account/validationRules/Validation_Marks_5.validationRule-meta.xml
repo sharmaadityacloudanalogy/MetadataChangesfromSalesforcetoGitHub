@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Marks_5</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(Marks__c &lt; 0 , MOD( Marks__c ,2) = 0)</errorConditionFormula>
+    <errorMessage>Marks Should not be a non-negative odd number.</errorMessage>
+</ValidationRule>

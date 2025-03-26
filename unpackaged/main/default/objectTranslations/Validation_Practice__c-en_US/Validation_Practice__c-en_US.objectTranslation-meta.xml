@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Validation Practice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Validation Practices</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Begin Date must be 1 to15 --></errorMessage>
+        <name>Begin_Date_15</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End Date Must be after Begin date --></errorMessage>
+        <name>Begin_Date_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Username cannot be mohit --></errorMessage>
+        <name>Username_cannot_mohit_32</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The My Integer Field only accept Integer Value!. --></errorMessage>
+        <name>Validate_Integer_13</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter mix_pct B/w 1 To 100. --></errorMessage>
+        <name>Validate_Mix_pct_16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Volume must be multiple of 5 --></errorMessage>
+        <name>Validate_Multiple_of_5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount must be B/W 0% TO 40% --></errorMessage>
+        <name>Validate_Percent_20</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Salary Range Must me Between 0 to 20000 --></errorMessage>
+        <name>Validate_Salary_15</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Volume Range Must be between -50 to 50. --></errorMessage>
+        <name>Validate_Volume_14</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The date must be a Saturday or Sunday. --></errorMessage>
+        <name>Validate_at_sun_11</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Old Records Only --></errorMessage>
+        <name>Validate_oldRecords_35</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Record Only --></errorMessage>
+        <name>Validate_rules_newRecord_34</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Weekday cannot be Saturday --></errorMessage>
+        <name>weekday_Sat_17</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Weekday cannot be Sun --></errorMessage>
+        <name>weekday_Sun_17</name>
+    </validationRules>
+</CustomObjectTranslation>

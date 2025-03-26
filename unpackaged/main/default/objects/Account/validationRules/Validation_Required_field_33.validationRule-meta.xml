@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Required_field_33</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Phone)</errorConditionFormula>
+    <errorMessage>The Phone Field is mandatory.</errorMessage>
+</ValidationRule>

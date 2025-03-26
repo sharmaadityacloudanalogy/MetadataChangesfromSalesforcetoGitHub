@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A123__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>A123</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

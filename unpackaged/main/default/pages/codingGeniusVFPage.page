@@ -1,0 +1,9 @@
+<apex:page controller="AccountHierarchyController">
+    <apex:form >
+        <apex:pageBlock title="Account Hierarchy">
+            <apex:pageBlockTable value="{!accounts}" var="acc">
+                <apex:column value="{!acc.Name}" headerValue="Account Name"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
